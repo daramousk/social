@@ -1,0 +1,17 @@
+.o_mail_chat_channel_archive {
+    .o-flex-display();
+    width: 100%;
+    padding: 2px 8px 2px 1.5*@odoo-horizontal-padding;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(@gray, 12%);
+        .o_mail_partner_unpin {
+            opacity: @sidebar-icon-opacity;
+        }
+    }
+    &.o_active {
+        background-color: darken(@gray, 15%);
+    }
+}

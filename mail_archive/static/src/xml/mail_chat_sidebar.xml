@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+
+    <t t-extend="mail.chat.Sidebar">
+        <t t-jquery="div[data-channel-id='channel_starred']" t-operation="after">
+            <div
+                class="o_mail_chat_channel_archive"
+                data-channel-id="channel_archive">
+                <span class="o_channel_name">
+                    <i class="fa fa-folder"/>
+                    Archive
+                </span>
+            </div>
+        </t>
+    </t>
+
+</templates>
