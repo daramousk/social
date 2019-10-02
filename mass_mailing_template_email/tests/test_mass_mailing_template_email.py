@@ -1,14 +1,11 @@
-# -*- coding: utf-8 -*-
 # Copyright 2019 Therp BV <https://therp.nl>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
-from openerp.tests.common import HttpCase
+from openerp.tests.common import HttpCase, tagged
 
 
 class TestMassMailingTemplateEmail(HttpCase):
 
-    post_install = True
-    at_install = False
-
+    @tagged('post_install', '-at_install')
     def test_mass_mailing_template_email(self):
         """
         Our process here is the following:

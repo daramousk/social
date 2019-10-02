@@ -4,7 +4,7 @@ odoo.define('mass_mailing_template_email.editor', function (require){
     var snippets_editor = require('web_editor.snippet.editor');
 
     snippets_editor.Class.include({
-        compute_snippet_templates: function (html) {
+        _compute_snippet_templates: function (html) {
             this._super(html);
             this.$('.o_mass_mailing_themes_upgrade').remove()
         }
